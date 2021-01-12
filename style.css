@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+body{
+    height: 100vh;
+    background-color: rgb(103, 75, 175);
+    color: rgb(255, 255, 255);
+    background-image: url("img/bg-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: initial;
+    background-size: cover;
+}
+
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+body .back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+}
+
+.container{
+    padding: 30px 40px 10px 40px;
+}
+.logo img{
+    width: 20vw;
+}
+.contenido{
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+.img{
+    padding-top: 65px;
+}
+.img img{
+    width: 55vw;
+}
+
+.aside{
+    width: 100%;
+    padding: 100px 0px 0px 20px;
+}
+
+.aside p{
+    margin-top: 10px;
+}
+.boton{
+    margin-top: 30px;
+}
+.boton a{
+    border-radius: 30px;
+    padding: 10px 40px;
+    color: rgb(103, 75, 175);
+    background: rgb(255, 255, 255);
+    box-shadow: 1px 1px 10px  rgba(0, 0, 0, 0.39);
+    transition: all .3s;
+}
+
+.boton a:hover{
+    color: rgb(255, 255, 255);
+    background: rgb(232, 130, 232);
+}
+
+.redes{
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-end;
+	align-items: center;
+    align-content: flex-end;
+    position: absolute;
+    right: 40px;
+    bottom: 30px;
+}
+.redes div{
+    margin: 0px 5px ;
+}
+.redes a{
+    border: 1px solid rgb(255, 255, 255);
+    padding: 10px ;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    border-radius: 100%;
+    transition: all .3s;
+}
+.redes a:hover{
+    border: 1px solid rgb(232, 130, 232);
+    color: rgb(232, 130, 232);
+}
+
+@media(max-width: 800px){
+    body{
+        background-image: url("img/bg-mobile.svg");
+        background-repeat: no-repeat;
+    }
+    h1{
+        font-size: 22px;
+        text-align: center;
+    }
+    .logo img{
+        width: 40vw;
+    }
+    .img img{
+        width: 100%;
+    }
+    .contenido{
+        display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+    }
+    .aside{
+        width: 100%;
+        padding:0px;
+    }
+    .aside h1{
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .aside p{
+        top: 10px;
+        font-size: 15.5px;
+        text-align: center;
+    }
+    .boton{
+        text-align: center;
+    }
+    .footer{
+        display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+    align-content: center;
+    padding: 30px 40px 10px 40px;
+    }
+    .redes{
+        position:static;
+        padding-top: 50px;
+    }
+}
